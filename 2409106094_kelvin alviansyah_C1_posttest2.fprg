@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kelvinalviansyah"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 03.10.50 PM"/>
+        <attribute name="created" value="a2VsdmluYWx2aWFuc3lhaDtNQUNCT09LLUFJUi1LRUw7MjAyNC0wOS0xNzswMS4zNC4zOCBBTTs0MDA4"/>
+        <attribute name="edited" value="a2VsdmluYWx2aWFuc3lhaDtNQUNCT09LLUFJUi1LRUw7MjAyNC0wOS0xNzswMy4xMC41MCBQTTs1OzQxMjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nim, HargaGula" type="Integer" array="False" size=""/>
+            <declare name="nama" type="String" array="False" size=""/>
+            <output expression="&quot;masukan nama anda&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;masukan nim&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;hallo&quot;" newline="True"/>
+            <output expression="nama" newline="True"/>
+            <output expression="&quot;dengan nim&quot;" newline="True"/>
+            <output expression="nim" newline="True"/>
+            <output expression="&quot;gula yang tersedia dengan harga 21.000/KL dari merek gulaku, manis kita, gunung madu&quot;" newline="True"/>
+            <output expression="&quot;masukan harga gula perkilo yang ingin di beli untuk melihat diskon nya&quot;" newline="True"/>
+            <input variable="HargaGula"/>
+            <declare name="gulaku, gulakusetelahdiskon" type="Real" array="False" size=""/>
+            <output expression="&quot;jika memilih merek gulaku mendapat 7% diskon&quot;" newline="True"/>
+            <assign variable="gulaku" expression="HargaGula*0.07"/>
+            <assign variable="gulakusetelahdiskon" expression="HargaGula-gulaku"/>
+            <output expression="&quot;harga setelah diskon adalah&quot;" newline="True"/>
+            <output expression="gulakusetelahdiskon" newline="True"/>
+            <declare name="ManisKita, maniskitasetelahdiskon" type="Real" array="False" size=""/>
+            <output expression="&quot;jika memilih merek manis kita mendapat 11% diskon&quot;" newline="True"/>
+            <assign variable="ManisKita" expression="HargaGula*0.11"/>
+            <assign variable="maniskitasetelahdiskon" expression="HargaGula-ManisKita"/>
+            <output expression="&quot;harga setelah diskon adalah&quot;" newline="True"/>
+            <output expression="maniskitasetelahdiskon" newline="True"/>
+            <declare name="gunungmadu, gunungmadusetelahdiskon" type="Real" array="False" size=""/>
+            <output expression="&quot;jika memilih merek gunung madu mendapat 13% diskon&quot;" newline="True"/>
+            <assign variable="gunungmadu" expression="HargaGula*0.13"/>
+            <assign variable="gunungmadusetelahdiskon" expression="HargaGula-gunungmadu"/>
+            <output expression="&quot;harga setelah diskon adalah&quot;" newline="True"/>
+            <output expression="gunungmadusetelahdiskon" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
